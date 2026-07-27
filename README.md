@@ -58,6 +58,13 @@ EV-ADAS-Dashboard-STM32/
 │── ev_dash.py
 │── STM32F103C8TX_FLASH.ld
 │── README.md
+|── Project Screenshots/
+     ├── Python Dashboard
+     ├── PICSimLab Simulation
+     ├── Internship Certificate
+
+
+
 ```
 
 ---
@@ -103,15 +110,7 @@ STM32 → UART → Tera Term / Python Dashboard
 
 ---
 
-## 📸 Project Screenshots
 
-You can add screenshots of:
-
-- Python Dashboard
-- PICSimLab Simulation
-- UART Output
-- ADAS Warning Display
-- Internship Certificate
 
 ---
 
