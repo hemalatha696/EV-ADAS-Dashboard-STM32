@@ -12,18 +12,18 @@ This project was developed as part of my **Embedded Systems Internship at Emertx
 
 ## ✨ Features
 
-- Real-Time EV Dashboard
-- Advanced Driver Assistance System (ADAS)
-- Speed Monitoring
-- State of Charge (SOC) Monitoring
-- Motor Temperature Monitoring
-- Torque & Range Calculation
-- Forward Collision Warning (FCW)
-- Blind Spot Detection (BSD)
-- Time-to-Collision (TTC)
-- UART Communication
-- Python Dashboard Visualization
-- Fault Detection & Warning Alerts
+- 🚘 Real-Time EV Dashboard
+- ⚠️ Advanced Driver Assistance System (ADAS)
+- 📈 Speed Monitoring
+- 🔋 State of Charge (SOC) Monitoring
+- 🌡️ Motor Temperature Monitoring
+- ⚙️ Torque & Range Calculation
+- 🚨 Forward Collision Warning (FCW)
+- 🔄 Blind Spot Detection (BSD)
+- ⏱️ Time-to-Collision (TTC)
+- 📡 UART Communication
+- 📊 Python Dashboard Visualization
+- ⚡ Fault Detection & Warning Alerts
 
 ---
 
@@ -43,33 +43,37 @@ This project was developed as part of my **Embedded Systems Internship at Emertx
 
 ## 📁 Project Structure
 
-```
+```text
 EV-ADAS-Dashboard-STM32/
-│── Core/
+│
+├── Core/
 │   ├── Inc/
 │   ├── Src/
 │   └── startup/
 │
-│── Drivers/
+├── Driver/
 │   ├── CMSIS/
 │   └── STM32F1xx_HAL_Driver/
 │
-│── ev_dash.ioc
-│── ev_dash.py
-│── STM32F103C8TX_FLASH.ld
-│── README.md
-|── Project Screenshots/
-     ├── Python Dashboard
-     ├── PICSimLab Simulation
-     ├── Internship Certificate
-
-
-
+├── Screenshots/
+│   ├── picsimlab_connection.png
+│   ├── python_dashboard.png
+│   ├── internship_certificate.png
+│   └── README.md
+│
+├── ev_dash.ioc
+├── ev_dash.py
+├── STM32F103C8TX_FLASH.ld
+├── README.md
+├── LICENSE
+└── .gitignore
 ```
 
 ---
 
 ## 🚘 Dashboard Parameters
+
+The EV Dashboard monitors the following parameters in real time:
 
 - Vehicle Speed
 - State of Charge (SOC)
@@ -83,44 +87,85 @@ EV-ADAS-Dashboard-STM32/
 
 ## ⚠️ ADAS Features
 
+The project implements several Advanced Driver Assistance System (ADAS) features:
+
 - Forward Collision Warning (FCW)
 - Blind Spot Detection (BSD)
 - Time-to-Collision (TTC)
 - Obstacle Detection using Ultrasonic Sensors
-- Buzzer & LED Alerts
+- Buzzer Alerts
+- LED Warning Indicators
 
 ---
 
 ## 🔄 Communication
 
-The STM32 firmware communicates with the Python Dashboard through the **UART protocol**.
+The STM32 firmware communicates with the Python Dashboard using the UART communication protocol.
 
-**Data Flow:**
+### Data Flow
 
-STM32 → UART → Tera Term / Python Dashboard
+```
+STM32 Blue Pill
+        │
+        ▼
+UART Communication
+        │
+        ▼
+Tera Term / Python Dashboard
+        │
+        ▼
+Real-Time EV Dashboard
+```
 
 ---
 
 ## 🖥️ Simulation Environment
 
+The complete project is simulated using:
+
 - STM32 Blue Pill (Simulated)
 - PICSimLab
-- UART Terminal (Tera Term)
+- Tera Term
 - Python Dashboard
 
 ---
 
+## 📸 Project Screenshots
 
+The **Screenshots** folder contains:
+
+- 🛠️ PICSimLab hardware simulation and connections
+- 📊 Python Dashboard displaying live EV parameters
+- 🎓 Emertxe Internship Completion Certificate
+
+Refer to the **Screenshots** folder for detailed images and descriptions.
 
 ---
 
 ## 🚀 How to Run
 
-1. Open the project in STM32CubeIDE.
-2. Build and flash the firmware (or simulate using PICSimLab).
-3. Connect UART to Tera Term or the Python Dashboard.
-4. Run `ev_dash.py`.
-5. Monitor EV parameters and ADAS warnings in real time.
+1. Open the project in **STM32CubeIDE**.
+2. Build the firmware.
+3. Load the project in **PICSimLab** (or flash it to an STM32 Blue Pill board).
+4. Connect UART to **Tera Term** or run the Python Dashboard.
+5. Execute `ev_dash.py`.
+6. Monitor EV parameters and ADAS warnings in real time.
+
+---
+
+## 🎯 Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+- Embedded C Programming
+- STM32 Firmware Development
+- GPIO, ADC, Timers, UART
+- UART Communication
+- Embedded System Debugging
+- Automotive Electronics
+- ADAS Concepts
+- Python Serial Communication
+- Real-Time Data Visualization
 
 ---
 
@@ -136,10 +181,21 @@ This project was developed during my **Embedded Systems Internship at Emertxe**.
 
 Electronics and Communication Engineering (ECE)
 
-Interested in Embedded Systems, Firmware Development, Automotive Electronics, and IoT.
+Interested in:
+
+- Embedded Systems
+- Firmware Development
+- Automotive Electronics
+- Internet of Things (IoT)
 
 ---
 
 ## 📄 License
 
-This project is shared for learning and portfolio purposes.
+This project is licensed under the **MIT License**.
+
+---
+
+## ⭐ Support
+
+If you found this project useful, please consider giving it a ⭐ on GitHub.
